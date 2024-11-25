@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Retro Genre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body>
+    
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Retro</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Gameset.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Infographics</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Games</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Device</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Information</a>
+    <a href="#Gameplay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gameplay</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Retro</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Retro Genre</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(128, 71, 104)" class="w3-round">
+    <p>Retrogaming, also known as classic gaming and old school gaming, is the playing and collection of personal computers, consoles, and video games from earlier decades. Usually, retrogaming is based upon systems that are outmoded or discontinued, although ported retrogaming allows games to be played on modern hardware via ports, emulations or compilations. It is typically for nostalgia, preservation, or authenticity. A new game could be retro styled, such as an RPG with turn-based combat and pixel art in isometric camera perspective, as well as chip-tune styled music.</p>
+    <p>Retrogaming has existed since the early years of the video game industry, and was popularized with the Internet and emulation technology. It is argued that the main reasons players are drawn to retrogames are nostalgia for different eras, the idea that older games are more innovative and original, and the simplicity of the games.</p>
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Pong.jpg" style="width:72%" onclick="onClick(this)" alt="Pong">
+      <img src="Space.jpg" style="width:40%" onclick="onClick(this)" alt="Space Game">
+      <img src="Grantrak.png" style="width:60%" onclick="onClick(this)" alt="Grantrak 10">
+    </div>
+
+    <div class="w3-half">
+      <img src="Atari.jpg" style="width:100%" onclick="onClick(this)" alt="Atari 2600">
+      <img src="Gameboy.jpg" style="width:60%" onclick="onClick(this)" alt="Game Boy">
+      <img src="nintendo.jpg" style="width:100%" onclick="onClick(this)" alt="Nintendo">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Infographics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+   <img src="RetroInfographics.jpg" style="width: 100%; min-height: 100%;" onclick="onClick(this)" alt="Infographics">
+    <p>The history of infographics on retrogaming reflects the evolution of both gaming culture and visual storytelling. In the early 2000s, as nostalgia for classic games grew, infographics began to surface, focusing on the milestones of gaming history. These early designs were simple and functional, using basic charts and timelines to highlight iconic consoles like the NES and Atari 2600 and legendary titles such as Pac-Man and Super Mario Bros.</p>
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Games.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Top 3 Retro Games</h1>
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros." style="color: rgb(250, 10, 10);" ><h1>Super Mario Bros(1985)</a></h1>
+    <img src="Supermario.jpg" style="width: 100% " onclick="onClick(this)" alt="Super Mario Bros.">
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)" style="color: rgb(8, 255, 103);" ><h1>The Legend of Zelda (1986)</a></h1>
+  <img src="Zelda.jpg" style="width: 100%" onclick="onClick(this)" alt="The Legend Of Zelda">
+</div>
+<div class="w3-row-padding">
+  <a href="https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)" style="color: rgb(255, 102, 0);"><h1>Sonic the Hedgehog (1991)</a>
+  <img src="Sonic.jpg" style="width: 100%" onclick="onClick(this)" alt="Sonic the Hedgehog">
+</div>
+  
+  <div class="w3-row-padding" id="packages" style="margin-top:75px">
+    <div class="w3-padding" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <div class="w3-row-padding">
+      <h1 style="color: rgb(238, 46, 46);" >Arcade Classics</h1>
+      <div class="w3-half">
+        <img src="Grantrak.png" class="w3-image" onclick="onClick(this)" alt="Grantrak 10">
+        <img src="Space.jpg" class="w3-image" onclick="onClick(this)" alt="Space Game">
+        <img src="Pong.jpg" class="w3-image" onclick="onClick(this)" alt="Pong">
+      </div>
+  
+      
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Console Retrogaming</h1>
+    <div class="w3-half">
+      <div class="w3-padding" >
+      <img src="nintendo.jpg" style="width:115%" onclick="onClick(this)" alt="Gran Turismo 7">
+      <img src="Atari.jpg" style="width:115%" onclick="onClick(this)" alt="Need_for_Speed_Heat">
+      <img src="Gameboy.jpg" style="width:100%" onclick="onClick(this)" alt="Assetto Corsa">
+    
+      
+    </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Arcade and Console Information.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Arcade and Consoles</h1>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Gran_Trak_10" style="color: rgb(255, 0, 0);" ><h1>Gran trak 10</a>
+      <li><a href="https://en.wikipedia.org/wiki/Computer_Space#:~:text=Computer%20Space%20is%20a%20space,first%20commercially%20available%20video%20game." style="color: rgb(255, 102, 0);"><h1>Computer Space</a>
+      <li><a href="https://en.wikipedia.org/wiki/Pong" style="color: rgb(175, 10, 197);" ><h1>Pong</a>
+      <li><a href="https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System" style="color: rgb(160, 0, 0);" >Super Nintendo Entertainment System</a>
+      <li><a href="https://en.wikipedia.org/wiki/Atari_2600" style="color: rgb(32, 159, 218);" >Atari 2600</a>
+      <li><a href="https://en.wikipedia.org/wiki/Game_Boy" style="color: blue;" >Game Boy</a></li> 
+  </div>
+  <div class="w3-padding" >
+    <section class="Gameplay" id="Gameplay" > 
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gameplay Mechanics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)">
+    <p>In Super Mario Bros. (1985), players control Mario (or Luigi) through side-scrolling levels, using jumping to avoid obstacles, defeat enemies, and reach higher areas. Power-ups like the Super Mushroom, Fire Flower, and Starman grant special abilities. Players collect coins for extra lives and aim to reach the flagpole at the end of each level. The game's mechanics combine simple actions with increasing challenges, laying the foundation for modern platformers.</p>
+      <a href="https://www.youtube.com/watch?v=rLl9XBg7wSs" style="color: blue;" ><h1>Full Gameplay</a>
+    <video width="500" controls>
+      <source src="Mario vid.mp4" type="video/mp4">
+    </video>
+  </section> 
+  </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

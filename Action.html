@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Action Genre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body>
+    
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Action</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Gameset.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Infographics</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Games</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Device</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Information</a>
+  <a href="#Gameplay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gameplay</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Action</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Action Genre</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(128, 71, 104)" class="w3-round">
+    <p>An action game is a video game genre that emphasizes physical challenges, including hand–eye coordination and reaction time. The genre includes a large variety of sub-genres, such as fighting games, beat 'em ups, shooter games, rhythm games and platform games. Multiplayer online battle arena and some real-time strategy games are also considered action games.</p>
+    <p>In an action game, the player typically controls a character often in the form of a protagonist or avatar. This player character must navigate a level, collecting objects, avoiding obstacles, and battling enemies with their natural skills as well as weapons and other tools at their disposal. At the end of a level or group of levels, the player must often defeat a boss enemy that is more challenging and often a major antagonist in the game's story. Enemy attacks and obstacles deplete the player character's health and lives, and the player receives a game over when they run out of lives.</p>
+    <p>1970s
+
+      Space Invaders (1978), an early shoot 'em up
+      Shooter games have been around since the beginning of the video game industry. Notable examples of shooting arcade video games during the early-to-mid-1970s include Syzygy Engineering's Computer Space (1971), Galaxy Game (1971), Tank (1974) by Kee Games, Gun Fight (1975) by Taito and Midway Manufacturing, and Midway's Sea Wolf (1976). In turn, early arcade shooter video games were inspired by early mainframe games such as Spacewar! (1962) as well as arcade electro-mechanical games such as Periscope (1965) and gun games.</p>
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Space invaders.JPG" style="width:53%" onclick="onClick(this)" alt="Space Invaders">
+      <img src="Galaxy Game.jpg" style="width:100%" onclick="onClick(this)" alt="Galaxy Game">
+      <img src="Spacewar.jpg" style="width:100%" onclick="onClick(this)" alt="Spacewar">
+    </div>
+
+    <div class="w3-half">
+      <img src="Periscope.jpg" style="width:60%" onclick="onClick(this)" alt="Periscope">
+      <img src="Breakout.png" style="width:100%" onclick="onClick(this)" alt="Breakout">
+      <img src="Need for speed.PNG" style="width:100%" onclick="onClick(this)" alt="Need For Speed">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Infographics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+   <img src="ActionInfographics.jpg" style="width: 100%; min-height: 100%;" onclick="onClick(this)" alt="Infographics">
+    <p>The action genre in video games emerged in the 1970s and 1980s with titles like Pong and Space Invaders, emphasizing reflexes and real-time gameplay. The 1980s saw the rise of arcade classics like Pac-Man and Donkey Kong, which introduced platforming and basic combat mechanics.
+
+      In the 1990s, advancements in technology brought 3D environments, with games like Doom and Tomb Raider redefining the genre by combining exploration and combat. The introduction of consoles like the PlayStation and Nintendo 64 allowed for more complex narratives and mechanics in action games.
+      
+      By the 2000s, franchises like Grand Theft Auto and God of War showcased cinematic storytelling alongside action, blending genres and appealing to a broader audience. Today, the action genre continues to dominate, integrating immersive graphics, open worlds, and multiplayer options in games like The Legend of Zelda: Breath of the Wild and Elden Ring.</p>
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Games.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Top 3 Action Games as of 2024</h1>
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/" style="color: rgb(126, 19, 5);" ><h1>Elden Ring</a></h1>
+    <img src="Elden ring.jpg" style="width: 100%" onclick="onClick(this)" alt="Elden Ring">
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/1778820/TEKKEN_8/" style="color: rgb(255, 0, 0);" ><h1>Tekken 8</a></h1>
+  <img src="Tekken 8.jpg" style="width: 100%" onclick="onClick(this)" alt="Tekken 8">
+</div>
+<div class="w3-row-padding">
+  <a href="https://store.steampowered.com/app/1593500/God_of_War/" style="color: rgb(0, 0, 0);"><h1>God Of War</a>
+  <img src="Gow.jpg" style="width: 100%" onclick="onClick(this)" alt="God Of War">
+</div>
+  
+  <div class="w3-row-padding" id="packages" style="margin-top:75px">
+    <div class="w3-padding" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <div class="w3-row-padding">
+      <h1 style="color: rgb(238, 46, 46);" >Pc Action Games</h1>
+      <div class="w3-half">
+        <img src="Tekken 8.jpg" style="width:100%" onclick="onClick(this)" alt="Tekken 8">
+        <img src="Elden ring.jpg" style="width:100%" onclick="onClick(this)" alt="Elden Ring">
+        <img src="Gow.jpg" style="width:100%" onclick="onClick(this)" alt="God Of War">
+      </div>
+  
+      <div class="w3-half">
+        <img src="Rdr2.jpg" style="width:100%" onclick="onClick(this)" alt="Red Dead Redemption 2">
+        <img src="Monster Hunter.jpg" style="width:100%" onclick="onClick(this)" alt="Monster Hunter World">
+        <img src="Hades.jpg" style="width:105%" onclick="onClick(this)" alt="Hades">
+      </div>
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Console Racing Games</h1>
+    <div class="w3-half">
+      <div class="w3-padding" >
+      <img src="Bloodborne.JPG" style="width:115%" onclick="onClick(this)" alt="Bloodborne">
+      <img src="Infamous.JPG" style="width:115%" onclick="onClick(this)" alt="Infamous">
+      <img src="Spiderman.JPG" style="width:115%" onclick="onClick(this)" alt="Spiderman Miles Morales">
+    
+      
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Mobile Action Games</h1>
+    <div class="w3-padding">
+          <img src="Mlbb.jpg" style="width:100%;" onclick="onClick(this)" alt="Mobile Legends Bang Bang">
+          <img src="Cod.png" style="width:100%" onclick="onClick(this)" alt="Call of Duty Mobile">
+          <img src="Farlight.jpg" style="width:100%" onclick="onClick(this)" alt="Farlight">
+        </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Game Information and Links.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Pc And Console</h1>
+    <ul>
+      <li><a href="https://store.steampowered.com/app/1778820/TEKKEN_8/" style="color: rgb(255, 0, 0);" ><h1>Tekken 8</a>
+      <li><a href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/" style="color: rgb(255, 102, 0);"><h1>ELDEN RING Shadow of the Erdtree</a>
+      <li><a href="https://store.steampowered.com/app/1593500/God_of_War/" style="color: rgb(0, 0, 0);" ><h1>God of War</a>
+      <li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" style="color: rgb(160, 0, 0);" >Red Dead Redemption 2</a>
+      <li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" style="color: rgb(0, 255, 64);" >Monster Hunter World</a>
+      <li><a href="https://store.steampowered.com/app/1145360/Hades/" style="color: rgb(252, 45, 90);" >Hades</a></li>
+    <h1>Mobile</h1>
+      <li><a href="https://www.mobilelegends.com" style="color: bisque;" >Mobile Legends Bang Bang</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.garena.game.codm&hl=en" style="color: rgb(85, 18, 18);" >Call Of Duty Mobile</a></li>
+      <li><a href="https://farlight84.farlightgames.com" style="color: rgb(109, 81, 40);" >Farlight 84</a></li>
+      <div>
+        <section class="Gameplay" id="Gameplay" >
+        <h1 class="w3-xxxlarge w3-text-red"><b>Gameplay Mechanics</b></h1>
+        <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)">
+        <h6>In Assassin's Creed Mirage, the gameplay focuses on stealth, parkour, and assassinations. Set in a reimagined Baghdad, players control Basim Ibn Ishaq, with a return to the series' roots, offering smaller, more focused environments compared to recent entries. Stealth is paramount, with mechanics like aerial assassinations and using the environment to sneak past enemies. Combat is present but less central, encouraging avoidance or careful engagements.</h6>
+      <a href="https://store.steampowered.com/app/3035570/Assassins_Creed_Mirage/">Assassin's Creed Mirage</a>
+        <video width="500" controls>
+            <source src="Assassins Creed Mirage.mp4" type="video/mp4">
+        </video>
+    
+    
+        </section>
+    </ul>
+    
+  </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+  </div>
+</body>
+</html>

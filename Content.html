@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Racing Genre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body>
+    
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Racing</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Gameset.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Infographics</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Games</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Device</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Information</a>
+    <a href="#Gameplay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gameplay</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Racing</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Racing Genre</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(128, 71, 104)" class="w3-round">
+    <p>Racing games have been one of the foundations for video games since its early days. The first racing game that was made was the Gran Trak 10 (1974), a coin-operated arcade game made by Atari. But then followed by Pole Position (1982), which opened up much more complex mechanics and is often credited with defining the genre for its time.</p>
+    <p>As devices keep on advancing, so did the advancements of graphics in video games. The rise of both arcade-style and simulation-based racing games. Game titles like Virtua Racing (1992) and Daytona USA (1993), these games offered 3D graphics and multiplayer modes. Meanwhile, games like Gran Turismo elevated the racing simulation scene, providing a high degree of realism in terms of car handling, physics, and track design.</p>
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Grantrak.png" style="width:53%" onclick="onClick(this)" alt="Gran Trak 10">
+      <img src="Virtua Racing.avif" style="width:100%" onclick="onClick(this)" alt="Virtua Racing">
+      <img src="Gran_Turismo_Screenshot.jpg" style="width:100%" onclick="onClick(this)" alt="Gran Turismo">
+    </div>
+
+    <div class="w3-half">
+      <img src="Pole Position.jpg" style="width:100%" onclick="onClick(this)" alt="Pole Position">
+      <img src="Daytona.jpg" style="width:100%" onclick="onClick(this)" alt="Daytona USA">
+      <img src="Need for speed.PNG" style="width:100%" onclick="onClick(this)" alt="Need For Speed">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Infographics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+   <img src="infographic.jpg" style="width: 100%; min-height: 100%;" onclick="onClick(this)" alt="Infographics">
+    <p>The racing game genre has evolved significantly over the decades. It began in the 1970s with simple arcade games like Gran Trak 10, focusing on basic driving mechanics. The 1990s introduced iconic titles such as Mario Kart, blending fun with competition, and Need for Speed, which added thrilling car chases. In the 2000s, franchises like Forza Motorsport and Gran Turismo pushed realism with detailed graphics and car physics. Today, advancements like virtual reality, dynamic weather, and open-world exploration in games like Forza Horizon and F1 23 showcase cutting-edge technology, delivering immersive and lifelike racing experiences.</p>
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Games.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Top 3 Racing Games as of 2024</h1>
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" style="color: rgb(175, 10, 197);" ><h1>Need For Speed Heat</a></h1>
+    <img src="NFs.jpg" style="width: 100%" onclick="onClick(this)" alt="Need For Speed Heat">
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://www.gran-turismo.com/us/" style="color: rgb(255, 0, 0);" ><h1>Gran Turismo</a></h1>
+  <img src="Grand turismo.jpg" style="width: 100%" onclick="onClick(this)" alt="Gran Turismo">
+</div>
+<div class="w3-row-padding">
+  <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" style="color: rgb(255, 102, 0);"><h1>Forza Horizon</a>
+  <img src="Forza HOrizon 5.jpg" style="width: 100%" onclick="onClick(this)" alt="Forza Horizon">
+</div>
+  
+  <div class="w3-row-padding" id="packages" style="margin-top:75px">
+    <div class="w3-padding" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <div class="w3-row-padding">
+      <h1 style="color: rgb(238, 46, 46);" >Pc Racing Games</h1>
+      <div class="w3-half">
+        <img src="Grand turismo.jpg" style="width:100%" onclick="onClick(this)" alt="Grand Turismo 7">
+        <img src="NFs.jpg" style="width:100%" onclick="onClick(this)" alt="Need For Speed Heat">
+        <img src="Forza HOrizon 5.jpg" style="width:100%" onclick="onClick(this)" alt="Forza Horizon 5">
+      </div>
+  
+      <div class="w3-half">
+        <img src="Lemans.jpg" style="width:125%" onclick="onClick(this)" alt="Le Mans Ultimate">
+        <img src="Forza Horizon 4.jpg" style="width:115%" onclick="onClick(this)" alt="Forza Horizon 4">
+        <img src="assetto-corsa.jpg" style="width:115%" onclick="onClick(this)" alt="Assetto Corsa">
+      </div>
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Console Racing Games</h1>
+    <div class="w3-half">
+      <div class="w3-padding" >
+      <img src="Grand turismo.jpg" style="width:115%" onclick="onClick(this)" alt="Gran Turismo 7">
+      <img src="NFs.jpg" style="width:115%" onclick="onClick(this)" alt="Need_for_Speed_Heat">
+      <img src="assetto-corsa.jpg" style="width:115%" onclick="onClick(this)" alt="Assetto Corsa">
+    
+      
+    </div>
+    <h1 style="color: rgb(238, 46, 46); display: inline;" >Mobile Racing Games</h1>
+    <div class="w3-padding">
+          <img src="Wreckfest.png" style="height: 400px;" onclick="onClick(this)" alt="Wreckfest">
+          <img src="Horizon.jpg" style="width:115%" onclick="onClick(this)" alt="Forza Horizon 4">
+          <img src="Rush Rally.jpg" style="width:115%" onclick="onClick(this)" alt="Assetto Corsa">
+        </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Game Information and Links.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Pc And Console</h1>
+    <ul>
+      <li><a href="https://www.gran-turismo.com/us/" style="color: rgb(255, 0, 0);" ><h1>Gran Turismo 7</a>
+      <li><a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" style="color: rgb(255, 102, 0);"><h1>Forza Horizon 5</a>
+      <li><a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" style="color: rgb(175, 10, 197);" ><h1>Need For Speed Heat</a>
+      <li><a href="https://store.steampowered.com/app/2399420/Le_Mans_Ultimate/" style="color: rgb(160, 0, 0);" >Le Mans Ultimate</a>
+      <li><a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/" style="color: rgb(32, 159, 218);" >Forza Horizon 4</a>
+      <li><a href="https://store.steampowered.com/app/805550/Assetto_Corsa_Competizione/" style="color: blue;" >Assetto Corsa Competizione</a></li>
+    <h1>Mobile</h1>
+      <li><a href="https://store.steampowered.com/app/228380/Wreckfest/" style="color: bisque;" >Wreckfest</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.aquiris.horizonchase&hl=en&pli=1" style="color: rgb(85, 18, 18);" >Horizon Chase</a></li>
+      <li><a href="https://store.steampowered.com/app/2020860/Rush_Rally_3/" style="color: rgb(109, 81, 40);" >Rush Rally 3</a></li>
+    
+    </ul>
+  </div>
+  <div class="w3-padding" >
+    <section class="Gameplay" id="Gameplay" > 
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gameplay Mechanics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)">
+    <p>Gran Turismo 7 offers a simulation-style driving experience with a strong emphasis on realism, car collection, and customization. Players race on a variety of tracks with a vast selection of cars, ranging from classic vehicles to modern high-performance models. The game features realistic driving physics, including weather effects, tire wear, and vehicle handling that require skillful control. Players can engage in single-player career modes, compete online, and participate in time trials or races against AI opponents. The game also includes a robust tuning system for customizing car performance and aesthetics.</p>
+      <a href="https://www.youtube.com/watch?v=7dYJ4IZFC4U" style="color: blue;" ><h1>Full Gameplay</a>
+    <video width="500" controls>
+      <source src="Gran Turismo.mp4" type="video/mp4">
+    </video>
+  </section> 
+  </div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
