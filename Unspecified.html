@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visual Novel Genre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body>
+    
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Visual Novel</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Gameset.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Infographics</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Games</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Device</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Information</a>
+    <a href="#Gameplay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gameplay</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Visual Novel</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Visual Novel Genre</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(128, 71, 104)" class="w3-round">
+    <p>The history of visual novels dates back to The Portopia Serial Murder Case (1983). It featured non-linear elements, which include traveling between different areas in a generally open world, a branching dialogue conversation system where the story develops through entering commands and receiving responses from other characters, and making choices that determine the dialogues and order of events as well as alternate outcomes, though there is only one true culprit while the others are red herrings. It also features a phone that could be used to dial any number to contact several non-player characters. The game was well received in Japan for its well-told storyline and surprising twist ending, and for allowing multiple ways to achieve objectives. Shortly after, in 1988, Snatcher appeared, developed by Hideo Kojima and released for the PC-8801 and MSX2 in 1988, in which a cyberpunk detective hunts down a serial killer. Another more non-linear early example was Mirrors, released by Soft Studio Wing for the PC-8801 and FM Towns computers in 1990; it featured a branching narrative, multiple endings, and audio CD music.</p>
+    <p>A common feature used in visual novels is having multiple protagonists giving different perspectives on the story. EVE Burst Error (1995), developed by Hiroyuki Kanno and C's Ware, introduced a unique twist to the system by allowing the player to switch between both protagonists at any time during the game, instead of finishing one protagonist's scenario before playing the other. EVE Burst Error often requires the player to have both protagonists co-operate with each other at various points during the game, with choices in one scenario affecting the other.</p>
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Snatcher.jpg" style="width:50%" onclick="onClick(this)" alt="Snatcher">
+      <img src="Portopia_cover_art.jpg" style="width:50%" onclick="onClick(this)" alt="Portopia">
+      <img src="Eve Burst.png" style="width:50%" onclick="onClick(this)" alt="Eve Burst">
+    </div>
+
+    <div class="w3-half">
+      <img src="Yuno.png" style="width:50%" onclick="onClick(this)" alt="Yuno">
+      <img src="Fate.jpg" style="width:50%" onclick="onClick(this)" alt="Fate">
+      <img src="Radiant_Historia.jpg" style="width:65%" onclick="onClick(this)" alt="Radiant Historia">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Infographics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+   <img src="VNInfographics.jpg" style="width: 100%; min-height: 100%;" onclick="onClick(this)" alt="Infographics">
+    <p>Visual novel games originated in the 1980s in Japan, with "The Portopia Serial Murder Case" (1983) being one of the first examples, blending text-based adventure with minimal graphics. The genre evolved throughout the 1990s, with games like "Tokimeki Memorial" (1994) shaping the romantic visual novel subgenre. By the 2000s, visual novels became more mainstream with titles like "Clannad" (2004), and the genre gained international popularity in the 2010s, especially with indie hits like "Doki Doki Literature Club!" (2017), bringing it to a global audience.</p>
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Games.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Top 3 Visual Novel Games as of 2024</h1>
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/819030/STEINSGATE_ELITE/" style="color: rgb(10, 10, 10);" ><h1>Steins Gate</a></h1>
+    <img src="Steins Gate.jpg" style="width: 100%" onclick="onClick(this)" alt="Steins Gate">
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://www.ace-attorney.com" style="color: rgb(3, 3, 3);" ><h1>Ace Attorney</a></h1>
+  <img src="Ace Attorney.jpg" style="width: 100%" onclick="onClick(this)" alt="Ace Attorney">
+</div>
+<div class="w3-row-padding">
+  <a href="https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/" style="color: rgb(197, 47, 197);"><h1>Doki Doki Literature Club</a>
+  <img src="Doki doki.jpg" style="width: 100%" onclick="onClick(this)" alt="Layers of Fear">
+</div>
+  
+  <div class="w3-row-padding" id="packages" style="margin-top:75px">
+    <div class="w3-padding" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <div class="w3-row-padding">
+      <h1 style="color: rgb(238, 46, 46);" >Pc Visual Novel Games</h1>
+      <div class="w3-half">
+        <img src="Doki doki.jpg" style="width:100%" onclick="onClick(this)" alt="Doki Doki Literature Club">
+        <img src="Ace Attorney.jpg" style="width:100%" onclick="onClick(this)" alt="Ace Attorney">
+        <img src="Steins Gate.jpg" style="width:100%" onclick="onClick(this)" alt="Steins Gate">
+      </div>
+  
+      <div class="w3-half">
+        <img src="Danganronpa.jpg" style="width:100%" onclick="onClick(this)" alt="Danganronpa">
+        <img src="Cat.jpg" style="width:100%" onclick="onClick(this)" alt="Do not take this cat home">
+        <img src="Nonary.jpg" style="width:100%" onclick="onClick(this)" alt="ZERO ESCAPE The Nonary Games">
+      </div>
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Console Visual Novel Games</h1>
+    <div class="w3-half">
+      <div class="w3-padding" >
+      <img src="Danganronpa.jpg" style="width:115%" onclick="onClick(this)" alt="Danganronpa">
+      <img src="The Fruit of Grisaia.jpg" style="width:115%" onclick="onClick(this)" alt="The Fruit of Grisaia">
+      <img src="Shibuya Scramble.jpg" style="width:115%" onclick="onClick(this)" alt="428: Shibuya Scramble">
+    
+      
+    </div>
+    <h1 style="color: rgb(238, 46, 46); display: inline;" >Mobile Visual Novel Games</h1>
+    <div class="w3-padding">
+          <img src="Danganronpa.jpg" style="width:115%;" onclick="onClick(this)" alt="Danganronpa">
+          <img src="Ace Attorney.jpg" style="width:115%" onclick="onClick(this)" alt="Ace Attorney">
+          <img src="Arcana.jpg" style="width:115%" onclick="onClick(this)" alt="The Arcana">
+        </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Game Information and Links.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Pc And Console</h1>
+    <ul>
+      <li><a href="https://store.steampowered.com/app/819030/STEINSGATE_ELITE/" style="color: rgb(255, 0, 0);" ><h1>Steins Gate</a>
+      <li><a href="https://www.ace-attorney.com" style="color: rgb(255, 102, 0);"><h1>Ace Attorney</a>
+      <li><a href="https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/" style="color: rgb(175, 10, 197);" ><h1>Doki Doki Literature Club</a>
+      <li><a href="https://store.steampowered.com/app/413410/Danganronpa_Trigger_Happy_Havoc/" style="color: rgb(160, 0, 0);" >Danganronpa</a>
+      <li><a href="https://pixeliminal.itch.io/do-not-take-this-cat-home" style="color: rgb(13, 13, 14);" >Do not take this cat home</a>
+      <li><a href="https://store.steampowered.com/app/477740/Zero_Escape_The_Nonary_Games/" style="color: blue;" >Zero Escape The Nonary Games</a></li>
+    <h1>Mobile</h1>
+      <li><a href="https://store.steampowered.com/app/413410/Danganronpa_Trigger_Happy_Havoc/" style="color: bisque;" >Danganronpa</a></li>
+      <li><a href="https://www.ace-attorney.com" style="color: rgb(85, 18, 18);" >Ace Attorney</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.nixhydragames.thearcana&hl=en" style="color: rgb(88, 19, 73);" >The Arcana</a></li>
+    
+    </ul>
+  </div>
+  <div class="w3-padding" >
+    <section class="Gameplay" id="Gameplay" > 
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gameplay Mechanics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)">
+    <p>Visual novel game mechanics typically focus on interactive storytelling, where players read through a narrative and make choices that influence the direction of the story. These games often feature dialogue trees, character interactions, and multiple endings based on player decisions. The gameplay is usually more about exploration, conversation, and puzzle-solving rather than action or combat.</p>
+      <p>Ace Attorney's mechanics involve courtroom drama combined with puzzle-solving elements. Players take on the role of Phoenix Wright, a defense attorney, solving legal cases by collecting evidence, presenting it in court, and cross-examining witnesses. The gameplay alternates between investigation (finding clues) and courtroom trials (presenting evidence, challenging testimony, and making objections). The game’s mechanics are centered on logic-based puzzles and decision-making to solve the cases and progress the story.</p>
+    <a href="https://www.youtube.com/watch?v=qx5BV__S3DE" style="color: blue;" ><h1>Full Gameplay</a>
+    <video width="500" controls>
+      <source src="Ace Gameplay.mp4" type="video/mp4">
+    </video>
+  </section> 
+  </div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
