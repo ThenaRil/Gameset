@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Horror Genre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+  </head>
+<body>
+    
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Horror</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="Gameset.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Infographics</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Games</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Device</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Information</a>
+    <a href="#Gameplay" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gameplay</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Horror</span>
+</header>
+
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Horror Genre</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(128, 71, 104)" class="w3-round">
+    <p>The incorporation of general horror genre themes into video games came early on in the medium, inspired by horror fiction and especially horror films. The earliest rudimentary attempt at a horror video game dates back to as early as 1972, when a Haunted House overlay was included with the first video game console, the Magnavox Odyssey, inspired by haunted house fiction. Taito's classic arcade video game Space Invaders (1978) has also been cited as a precursor to horror video games, as it involved a survival scenario where an alien invasion slowly descends and increasingly destroys the landscape while menacing sound effects gradually speed up, which created a sense of panic in players when it first released. The text-based adventure games Mystery House (1980) and The Lurking Horror (1987) incorporated horror elements through their textual descriptions of rooms.</p>
+    <p>ASCII Corporation's Nostromo (1981) for the PC-6001, inspired by the science fiction horror film Alien (1979), was a survival horror game that involves escaping from an invisible alien with limited available resources. Another notable early horror video game was Haunted House (1982) for the Atari 2600. At that point, video game technology lacked the fidelity to carry the themes of horror in the technology and was instead wrapped more in game manuals and other presentation materials. 3D Monster Maze (1982) for the Sinclair ZX81, while not containing images tied with horror games, was one of the first games to induce the feeling of suspense and mystery typically associated with the genre.</p>
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Mystery house.jpg" style="width:50%" onclick="onClick(this)" alt="Mystery House">
+      <img src="Lurking Horror.jpg" style="width:50%" onclick="onClick(this)" alt="Lurking Horror">
+      <img src="Hauntedhouseatari.jpg" style="width:50%" onclick="onClick(this)" alt="Haunted House">
+    </div>
+
+    <div class="w3-half">
+      <img src="3dmonster.jpg" style="width:50%" onclick="onClick(this)" alt="3d Monster Maze">
+      <img src="Project_Firestart_Coverart.png" style="width:50%" onclick="onClick(this)" alt="Project Firestart Coverart">
+      <img src="Ghosthousecard.jpg" style="width:50%" onclick="onClick(this)" alt="Ghosthousecard">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Infographics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+   <img src="HorrorInfographics.jpg" style="width: 100%; min-height: 100%;" onclick="onClick(this)" alt="Infographics">
+    <p>Horror video games began in the 1980s with text-based adventures and pixelated visuals (Haunted House). The 1990s saw the rise of iconic survival horror franchises like Resident Evil and Silent Hill. In the 2000s, psychological horror (Fatal Frame) and atmospheric titles flourished. The 2010s brought indie innovation (Amnesia, Outlast) and multiplayer scares (Dead by Daylight). Today, immersive technologies like VR and storytelling redefine the genre.</p>
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Games.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Top 3 Horror Games as of 2024</h1>
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/424840/Little_Nightmares/" style="color: rgb(137, 139, 5);" ><h1>Little Nigthmares</a></h1>
+    <img src="LittleNightmares.JPG" style="width: 100%" onclick="onClick(this)" alt="Little Nightmares">
+  </div>
+  <div class="w3-row-padding">
+    <a href="https://store.steampowered.com/app/48000/LIMBO/" style="color: rgb(3, 3, 3);" ><h1>LIMBO</a></h1>
+  <img src="Limbo.jpg" style="width: 100%" onclick="onClick(this)" alt="Alien Isolation">
+</div>
+<div class="w3-row-padding">
+  <a href="https://store.steampowered.com/app/1946700/Layers_of_Fear/" style="color: rgb(117, 0, 0);"><h1>Layers of Fear</a>
+  <img src="Layers.avif" style="width: 100%" onclick="onClick(this)" alt="Layers of Fear">
+</div>
+  
+  <div class="w3-row-padding" id="packages" style="margin-top:75px">
+    <div class="w3-padding" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Devices.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <div class="w3-row-padding">
+      <h1 style="color: rgb(238, 46, 46);" >Pc Horror Games</h1>
+      <div class="w3-half">
+        <img src="LittleNightmares.JPG" style="width:100%" onclick="onClick(this)" alt="Little Nightmares">
+        <img src="Alien.jpg" style="width:100%" onclick="onClick(this)" alt="Alien Isolation">
+        <img src="Layers.avif" style="width:100%" onclick="onClick(this)" alt="Layers Of Fear">
+      </div>
+  
+      <div class="w3-half">
+        <img src="Fnaf.jpg" style="width:100%" onclick="onClick(this)" alt="Fight Nights At Freddy's">
+        <img src="Outlast.jpg" style="width:100%" onclick="onClick(this)" alt="Outlast">
+        <img src="Phasma.jpg" style="width:100%" onclick="onClick(this)" alt="Phasmophobia">
+      </div>
+    </div>
+    <h1 style="color: rgb(238, 46, 46);" >Console Horror Games</h1>
+    <div class="w3-half">
+      <div class="w3-padding" >
+      <img src="LittleNightmares.JPG" style="width:115%" onclick="onClick(this)" alt="Little Nightmares">
+      <img src="Outlast.jpg" style="width:115%" onclick="onClick(this)" alt="Outlast">
+      <img src="Layers.avif" style="width:115%" onclick="onClick(this)" alt="Layers of Fear">
+    
+      
+    </div>
+    <h1 style="color: rgb(238, 46, 46); display: inline;" >Mobile Racing Games</h1>
+    <div class="w3-padding">
+          <img src="Fnaf.jpg" style="width:115%;" onclick="onClick(this)" alt="FNAF">
+          <img src="Granny.JPG" style="width:115%" onclick="onClick(this)" alt="Granny">
+          <img src="Limbo.jpg" style="width:115%" onclick="onClick(this)" alt="LIMBO">
+        </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Game Information and Links.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)" class="w3-round">
+    <h1>Pc And Console</h1>
+    <ul>
+      <li><a href="https://store.steampowered.com/app/424840/Little_Nightmares/" style="color: rgb(255, 0, 0);" ><h1>Little Nightmares</a>
+      <li><a href="https://www.alanwake.com" style="color: rgb(255, 102, 0);"><h1>Alan Wake 2</a>
+      <li><a href="https://store.steampowered.com/app/1946700/Layers_of_Fear/" style="color: rgb(175, 10, 197);" ><h1>Layers of Fear</a>
+      <li><a href="https://store.steampowered.com/app/739630/Phasmophobia/" style="color: rgb(160, 0, 0);" >Phasmophobia</a>
+      <li><a href="https://store.steampowered.com/app/238320/Outlast/" style="color: rgb(32, 159, 218);" >Outlast</a>
+      <li><a href="https://store.steampowered.com/app/214490/Alien_Isolation/" style="color: blue;" >Alien Isolation</a></li>
+    <h1>Mobile</h1>
+      <li><a href="https://store.steampowered.com/app/962400/Granny/" style="color: bisque;" >Granny</a></li>
+      <li><a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/" style="color: rgb(85, 18, 18);" >FNAF</a></li>
+      <li><a href="https://store.steampowered.com/app/48000/LIMBO/" style="color: rgb(109, 81, 40);" >LIMBO</a></li>
+    
+    </ul>
+  </div>
+  <div class="w3-padding" >
+    <section class="Gameplay" id="Gameplay" > 
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gameplay Mechanics.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(255, 75, 255, 0.1)">
+    <p>The main difference between horror and survival horror lies in their focus. Horror games prioritize creating fear through atmosphere, story, and visuals, immersing players in unsettling environments without emphasizing survival mechanics. In contrast, survival horror adds a layer of vulnerability by introducing resource management, limited combat, or evasion mechanics, forcing players to actively "survive" against threats, heightening tension.</p>
+      <p>In Little Nightmares, the gameplay centers around platforming and puzzle-solving within a surreal, grotesque world. Fear comes from its haunting atmosphere, eerie visuals, and the sense of vulnerability as players must hide or evade monstrous foes rather than confront them directly. The game excels in creating psychological horror through its oppressive environments and the constant feeling of being small and powerless.</p>
+    <a href="https://www.youtube.com/watch?v=UJ6Jcftf-c4" style="color: blue;" ><h1>Full Gameplay</a>
+    <video width="500" controls>
+      <source src="Little.mp4" type="video/mp4">
+    </video>
+  </section> 
+  </div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
